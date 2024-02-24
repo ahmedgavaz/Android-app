@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DataRepository{
+public interface DataRepository{
     public static List<Country> easyEurope() {
         List<Country> europeCountries = new ArrayList<>();
         europeCountries.add(new Country("Австрия", "at", "atm", "Виена"));
