@@ -70,111 +70,37 @@ public class TestScreen extends AppCompatActivity {
         for (int i = 1; i < 4; i++) {
             buttons.get(i).setText(options.get(i));
         }
-        first = findViewById(R.id.first);
-        second = findViewById(R.id.second);
-        third= findViewById(R.id.third);
-        fourth =findViewById(R.id.fourth);
-        first.setOnClickListener(new View.OnClickListener() {
+        View.OnClickListener answerClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!String.valueOf(first.getText()).equals(correctAnswer.getName())){
-                    first.setBackgroundColor(Color.RED);
-                    first.setText("");
+                Button clickedButton = (Button) v;
+                String selectedAnswer = clickedButton.getText().toString();
+
+                if (!selectedAnswer.equals(correctAnswer.getName())) {
+                    clickedButton.setBackgroundColor(Color.RED);
+                    clickedButton.setText("");
                     errors++;
-                    if (errors<3){
-                        receivedPoints[0]=receivedPoints[0]/2;
-                    }else{
-                        receivedPoints[0]=0;
+                    if (errors < 3) {
+                        receivedPoints[0] = receivedPoints[0] / 2;
+                    } else {
+                        receivedPoints[0] = 0;
                     }
-                }else{
-                    first.setBackgroundColor(Color.GREEN);
-                        Intent intent = new Intent(TestScreen.this,TestScreen.class);
-                        intent.putExtra("Mode",mode);
-                        intent.putExtra("Level",level);
-                        intent.putExtra("Area",area);
-                        questionCount++;
-                        errors=0;
-                        points+=receivedPoints[0];
+                } else {
+                    clickedButton.setBackgroundColor(Color.GREEN);
+                    Intent intent = new Intent(TestScreen.this, TestScreen.class);
+                    intent.putExtra("Mode", mode);
+                    intent.putExtra("Level", level);
+                    intent.putExtra("Area", area);
+                    questionCount++;
+                    points += receivedPoints[0];
+                    errors = 0;
                     startActivity(intent);
                 }
             }
-        });
-        second.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!String.valueOf(second.getText()).equals(correctAnswer.getName())){
-                    second.setBackgroundColor(Color.RED);
-                    second.setText("");
-                    errors++;
-                    if (errors<3){
-                        receivedPoints[0]=receivedPoints[0]/2;
-                    }else{
-                        receivedPoints[0]=0;
-                    }
-                }else{
-                    second.setBackgroundColor(Color.GREEN);
-                        Intent intent = new Intent(TestScreen.this,TestScreen.class);
-                        intent.putExtra("Mode",mode);
-                        intent.putExtra("Level",level);
-                        intent.putExtra("Area",area);
-                        questionCount++;
-                        errors=0;
-                        points+=receivedPoints[0];
-                        startActivity(intent);
-
-                }
-            }
-        });
-        third.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!String.valueOf(third.getText()).equals(correctAnswer.getName())){
-                    third.setBackgroundColor(Color.RED);
-                    third.setText("");
-                    errors++;
-                    if (errors<3){
-                        receivedPoints[0]=receivedPoints[0]/2;
-                    }else{
-                        receivedPoints[0]=0;
-                    }
-                }else{
-                    third.setBackgroundColor(Color.GREEN);
-                        Intent intent = new Intent(TestScreen.this,TestScreen.class);
-                        intent.putExtra("Mode",mode);
-                        intent.putExtra("Level",level);
-                        intent.putExtra("Area",area);
-                        questionCount++;
-                        errors=0;
-                        points+=receivedPoints[0];
-                        startActivity(intent);
-                }
-            }
-        });
-        fourth.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!String.valueOf(fourth.getText()).equals(correctAnswer.getName())){
-                    fourth.setBackgroundColor(Color.RED);
-                    fourth.setText("");
-                    errors++;
-                    if (errors<3){
-                        receivedPoints[0]=receivedPoints[0]/2;
-                    }else{
-                        receivedPoints[0]=0;
-                    }
-                }else{
-                    fourth.setBackgroundColor(Color.GREEN);
-                        Intent intent = new Intent(TestScreen.this,TestScreen.class);
-                        intent.putExtra("Mode",mode);
-                        intent.putExtra("Level",level);
-                        intent.putExtra("Area",area);
-                        questionCount++;
-                        points+=receivedPoints[0];
-                        errors=0;
-                        startActivity(intent);
-                }
-            }
-        });
+        };
+        for (Button button : buttons) {
+            button.setOnClickListener(answerClickListener);
+        }
     }
 
     @Override
