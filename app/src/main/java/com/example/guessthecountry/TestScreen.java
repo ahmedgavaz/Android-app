@@ -26,6 +26,7 @@ public class TestScreen extends AppCompatActivity {
     private static int questionCount = 1,errors=0;
     private static int points=0;
     private static List<String> askedCountries = new ArrayList<>();
+    private static List<Button> wrongChoices = new ArrayList<>();
 
     private void setQuestionAndOptionsCapitals(List<Country> countries, String mode,int pointsForMode) {
         do {
@@ -76,16 +77,17 @@ public class TestScreen extends AppCompatActivity {
                 Button clickedButton = (Button) v;
                 String selectedAnswer = clickedButton.getText().toString();
 
-                if (!selectedAnswer.equals(correctAnswer.getName())) {
+                if (!selectedAnswer.equals(correctAnswer.getName()) && !wrongChoices.contains(clickedButton)) {
                     clickedButton.setBackgroundColor(Color.RED);
-                    clickedButton.setText("");
+                    clickedButton.setTextColor(Color.RED);
                     errors++;
+                    wrongChoices.add(clickedButton);
                     if (errors < 3) {
                         receivedPoints[0] = receivedPoints[0] / 2;
                     } else {
                         receivedPoints[0] = 0;
                     }
-                } else {
+                } else if(selectedAnswer.equals(correctAnswer.getName())){
                     clickedButton.setBackgroundColor(Color.GREEN);
                     Intent intent = new Intent(TestScreen.this, TestScreen.class);
                     intent.putExtra("Mode", mode);
@@ -112,6 +114,7 @@ public class TestScreen extends AppCompatActivity {
             intent.putExtra("Points",String.valueOf(points));
             points=0;
             startActivity(intent);
+            wrongChoices.clear();
         }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.test);
