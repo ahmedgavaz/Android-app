@@ -23,6 +23,7 @@ public class HelpScreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HelpScreen.this, MainMenu.class);
+                finish();
                 startActivity(intent);
             }
         });
@@ -30,6 +31,7 @@ public class HelpScreen extends AppCompatActivity {
     @Override
     public void onBackPressed(){
         Intent intent = new Intent(HelpScreen.this, MainMenu.class);
+        finish();
         startActivity(intent);
     }
 }
