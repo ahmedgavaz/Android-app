@@ -96,6 +96,7 @@ public class TestScreen extends AppCompatActivity {
                     questionCount++;
                     points += receivedPoints[0];
                     errors = 0;
+                    finish();
                     startActivity(intent);
                 }
             }
@@ -113,6 +114,7 @@ public class TestScreen extends AppCompatActivity {
             Intent intent = new Intent(TestScreen.this, EndGame.class);
             intent.putExtra("Points",String.valueOf(points));
             points=0;
+            finish();
             startActivity(intent);
             wrongChoices.clear();
         }
