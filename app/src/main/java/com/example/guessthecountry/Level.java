@@ -29,6 +29,7 @@ public class Level extends AppCompatActivity {
                 Intent intent = new Intent(Level.this, Region.class);
                 intent.putExtra("Mode",mode);
                 intent.putExtra("Level","Easy");
+                finish();
                 startActivity(intent);
             }
         });
@@ -38,6 +39,7 @@ public class Level extends AppCompatActivity {
                 Intent intent = new Intent(Level.this, Region.class);
                 intent.putExtra("Mode",mode);
                 intent.putExtra("Level","Medium");
+                finish();
                 startActivity(intent);
             }
         });
@@ -47,6 +49,7 @@ public class Level extends AppCompatActivity {
                 Intent intent = new Intent(Level.this, Region.class);
                 intent.putExtra("Mode",mode);
                 intent.putExtra("Level","Hard");
+                finish();
                 startActivity(intent);
             }
         });
@@ -54,6 +57,7 @@ public class Level extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Level.this, MainMenu.class);
+                finish();
                 startActivity(intent);
             }
         });
