@@ -40,6 +40,7 @@ public class Result  extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Result.this, MainMenu.class);
+                finish();
                 startActivity(intent);
             }
         });
