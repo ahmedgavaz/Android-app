@@ -57,6 +57,7 @@ public class EndGame extends AppCompatActivity {
                 }
                 DataRepository.writeUsersToFile(getApplicationContext(),winners);
                 Intent intent = new Intent(EndGame.this, MainMenu.class);
+                finish();
                 startActivity(intent);
             }
         });
