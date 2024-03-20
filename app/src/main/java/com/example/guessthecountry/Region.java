@@ -57,6 +57,7 @@ public class Region extends AppCompatActivity implements LocationListener {
                 intent.putExtra("Mode", mode);
                 intent.putExtra("Level", level);
                 intent.putExtra("Area", "Africa");
+                finish();
                 startActivity(intent);
             }
         });
@@ -67,6 +68,7 @@ public class Region extends AppCompatActivity implements LocationListener {
                 intent.putExtra("Mode", mode);
                 intent.putExtra("Level", level);
                 intent.putExtra("Area", "America");
+                finish();
                 startActivity(intent);
             }
         });
@@ -77,6 +79,7 @@ public class Region extends AppCompatActivity implements LocationListener {
                 intent.putExtra("Mode", mode);
                 intent.putExtra("Level", level);
                 intent.putExtra("Area", "Asia");
+                finish();
                 startActivity(intent);
             }
         });
@@ -87,6 +90,7 @@ public class Region extends AppCompatActivity implements LocationListener {
                 intent.putExtra("Mode", mode);
                 intent.putExtra("Level", level);
                 intent.putExtra("Area", "Europe");
+                finish();
                 startActivity(intent);
             }
         });
@@ -107,6 +111,7 @@ public class Region extends AppCompatActivity implements LocationListener {
             public void onClick(View v) {
                 Intent intent = new Intent(Region.this, Level.class);
                 intent.putExtra("Mode", mode);
+                finish();
                 startActivity(intent);
             }
         });
@@ -143,6 +148,7 @@ public class Region extends AppCompatActivity implements LocationListener {
                     continent="Europe";
                 }
                 intent.putExtra("Area", continent);
+                finish();
                 startActivity(intent);
             }
         } catch (IOException e) {
@@ -167,6 +173,7 @@ public class Region extends AppCompatActivity implements LocationListener {
                 locationManager.requestSingleUpdate(LocationManager.GPS_PROVIDER, Region.this, null);
             } else {
                 Intent intent = new Intent(Region.this, MainMenu.class);
+                finish();
                 startActivity(intent);
             }
         }
