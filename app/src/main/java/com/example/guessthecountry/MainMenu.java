@@ -29,6 +29,7 @@ public class MainMenu extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainMenu.this, Level.class);
                 intent.putExtra("Mode","Flag");
+                finish();
                 startActivity(intent);
             }
         });
@@ -37,6 +38,7 @@ public class MainMenu extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainMenu.this, Level.class);
                 intent.putExtra("Mode","Capital");
+                finish();
                 startActivity(intent);
             }
         });
@@ -44,6 +46,7 @@ public class MainMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainMenu.this,HelpScreen.class);
+                finish();
                 startActivity(intent);
             }
         });
@@ -52,6 +55,7 @@ public class MainMenu extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainMenu.this, Level.class);
                 intent.putExtra("Mode","Map");
+                finish();
                 startActivity(intent);
             }
         });
@@ -59,6 +63,7 @@ public class MainMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainMenu.this, Result.class);
+                finish();
                 startActivity(intent);
             }
         });
