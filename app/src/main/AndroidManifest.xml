@@ -2,11 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
 
     <application
         android:name=".MyApplication"
@@ -20,7 +18,7 @@
         android:theme="@style/Theme.GuessTheCountry"
         tools:targetApi="31">
         <activity
-            android:name=".MainMenu"
+            android:name=".Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,6 +32,8 @@
         <activity android:name="TestScreen"></activity>
         <activity android:name="EndGame"></activity>
         <activity android:name="Result"></activity>
+        <activity android:name="Register"></activity>
+        <activity android:name="MainMenu" />
         <activity android:name="com.example.guessthecountry.MyApplication" />
 
         <meta-data
