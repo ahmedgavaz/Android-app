@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#F4FA25"
     android:id="@+id/mainLayout"
-    tools:context=".MainMenu"
+    tools:context=".Screens.MainMenu"
     tools:layout_editor_absoluteX="-9dp"
     tools:layout_editor_absoluteY="-99dp">
 
