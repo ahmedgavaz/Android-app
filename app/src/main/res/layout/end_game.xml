@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F4FA25"
-    tools:context=".MainMenu"
+    tools:context=".Screens.MainMenu"
     tools:layout_editor_absoluteX="-9dp"
     tools:layout_editor_absoluteY="-99dp">
 
@@ -36,7 +36,7 @@
         android:layout_marginTop="26dp"
         android:layout_marginEnd="32dp"
         android:fontFamily="@font/berkshire_swash"
-        android:text="Поздравеления!"
+        android:text="Поздравления!"
         android:textAlignment="center"
         android:textColor="#D85B5B"
         android:textSize="40sp"
@@ -53,26 +53,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="100dp"
         android:fontFamily="casual"
         android:text="Главно меню"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usernameField" />
-
-    <EditText
-        android:id="@+id/usernameField"
-        android:layout_width="314dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="20dp"
-        android:ems="10"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/result" />
 
