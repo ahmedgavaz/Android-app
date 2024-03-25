@@ -34,6 +34,7 @@
         <activity android:name=".Screens.EndGame"></activity>
         <activity android:name=".Screens.Result"></activity>
         <activity android:name=".Screens.Register"></activity>
+        <activity android:name=".Screens.EditProfile"></activity>
         <activity android:name=".Screens.MainMenu" />
         <activity android:name="com.example.guessthecountry.Screens.MyApplication" />
 
