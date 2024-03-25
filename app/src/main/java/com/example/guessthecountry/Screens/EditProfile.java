@@ -43,16 +43,16 @@ public class EditProfile  extends AppCompatActivity {
         back = findViewById(R.id.backButton);
 
         alertDialogBuilder = new AlertDialog.Builder(this);
+        final String finalUsername = username;
         save.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
                 String usernameText = usernameField.getText().toString().trim();
                 String passwordText = passwordField.getText().toString().trim();
 
                 if (!usernameText.isEmpty() && !passwordText.isEmpty()) {
-                    if (!db.isUserExists(usernameText) || usernameText.equals(username)) {
-                        db.updateUser(usernameText,passwordText);
+                    if (!db.isUserExists(usernameText) || usernameText.equals(finalUsername)) {
+                        db.updateUser(usernameText, passwordText);
                         openDialog("Успешна редакция!", true);
                     } else {
                         openDialog("Потребителя вече съществува!", false);
@@ -62,6 +62,7 @@ public class EditProfile  extends AppCompatActivity {
                 }
             }
         });
+
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
