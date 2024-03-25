@@ -30,7 +30,7 @@ public class Database extends SQLiteOpenHelper {
     private static final String KEY_CAPITAL = "capital";
 
     private static final String KEY_NAME = "username";
-    private static final String KEY_PH_NO = "password";
+    private static final String KEY_PASSWORD = "password";
     private static final String KEY_POINTS = "points";
 
     public Database(Context context) {
@@ -42,7 +42,7 @@ public class Database extends SQLiteOpenHelper {
         String CREATE_USERS_TABLE = "CREATE TABLE " + USERS +
                 "("
                 + KEY_ID + " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT,"
-                + KEY_PH_NO + " TEXT" + ")";
+                + KEY_PASSWORD + " TEXT" + ")";
         db.execSQL(CREATE_USERS_TABLE);
 
         String CREATE_WINNERS_TABLE = "CREATE TABLE " + WINNERS +
@@ -252,6 +252,25 @@ public class Database extends SQLiteOpenHelper {
         addCountry(db, "Тонга", "to", "tom", "Нукуалофа", "America", "Hard");
         addCountry(db, "Вануату", "vu", "vum", "Порт Вила", "America", "Hard");
     }
+    public void updateUser(String username, String newPassword) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(KEY_PASSWORD, newPassword);
+
+        // Updating row
+        db.update(USERS, values, KEY_NAME + " = ?",
+                new String[] { username });
+        db.close();
+    }
+    public void deleteUserByUsername(String username) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        // Изтриване на ред от таблицата USERS, където потребителското име (KEY_NAME) съвпада с подаденото username
+        db.delete(USERS, KEY_NAME + " = ?", new String[]{username});
+
+        db.close();
+    }
 
     private void addCountry(SQLiteDatabase db, String name, String flag, String map, String capital, String continent, String level) {
         ContentValues values = new ContentValues();
@@ -285,7 +304,26 @@ public class Database extends SQLiteOpenHelper {
         db.close();
         return countryList;
     }
+    public User getUserByUsername(String username) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        User user = null;
 
+        Cursor cursor = db.query(USERS, new String[]{KEY_ID, KEY_NAME, KEY_PASSWORD},
+                KEY_NAME + "=?", new String[]{username}, null, null, null);
+
+        if (cursor != null) {
+            cursor.moveToFirst();
+            if (cursor.getCount() > 0) {
+                user = new User();
+                user.setId(cursor.getInt(cursor.getColumnIndex(KEY_ID)));
+                user.setUserName(cursor.getString(cursor.getColumnIndex(KEY_NAME)));
+                user.setPassword(cursor.getString(cursor.getColumnIndex(KEY_PASSWORD)));
+            }
+            cursor.close();
+        }
+
+        return user;
+    }
     public List<Country> getCountriesByDifficultyAndContinent(String level, String continent) {
         List<Country> countryList = new ArrayList<>();
         SQLiteDatabase db = this.getWritableDatabase();
@@ -328,7 +366,7 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(KEY_NAME, user.getUsername());
-        values.put(KEY_PH_NO, user.getPassword());
+        values.put(KEY_PASSWORD, user.getPassword());
         db.insert(USERS, null, values);
         db.close();
     }
