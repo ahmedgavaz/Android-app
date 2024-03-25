@@ -11,7 +11,7 @@ import android.widget.Button;
 import com.example.guessthecountry.R;
 
 public class MainMenu extends AppCompatActivity {
-    private Button flag, capital, help, map, results, exit;
+    private Button flag, capital, help, map, results, exit,edit;
     private String username;
     private static final String TAG = "MainActivity";
 
@@ -28,6 +28,16 @@ public class MainMenu extends AppCompatActivity {
         map = findViewById(R.id.map);
         results = findViewById(R.id.results);
         exit = findViewById(R.id.exit);
+        edit = findViewById(R.id.editProfile);
+        edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainMenu.this, EditProfile.class);
+                intent.putExtra("User", username);
+                startActivity(intent);
+                finish();
+            }
+        });
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
