@@ -52,7 +52,7 @@ public class EditProfile  extends AppCompatActivity {
 
                 if (!usernameText.isEmpty() && !passwordText.isEmpty()) {
                     if (!db.isUserExists(usernameText) || usernameText.equals(finalUsername)) {
-                        db.updateUser(usernameText, passwordText);
+                        db.updateUser(username,usernameText, passwordText);
                         openDialog("Успешна редакция!", true);
                     } else {
                         openDialog("Потребителя вече съществува!", false);
@@ -104,9 +104,12 @@ public class EditProfile  extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 if (bool) {
+                    String newUsername = usernameField.getText().toString().trim();
+                    String newPassword = passwordField.getText().toString().trim();
+                    db.updateUser(username, newUsername, newPassword); // Обновяване на потребителското име и парола
+
                     Intent intent = new Intent(EditProfile.this, MainMenu.class);
-                    db.updateUser(usernameField.getText().toString(), passwordField.getText().toString());
-                    intent.putExtra("User", username);
+                    intent.putExtra("User", newUsername);
                     startActivity(intent);
                     finish();
                 }
@@ -115,4 +118,5 @@ public class EditProfile  extends AppCompatActivity {
         alertDialog = alertDialogBuilder.create();
         alertDialog.show();
     }
+
 }
