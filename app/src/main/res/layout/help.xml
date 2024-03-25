@@ -1,59 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4FA25"
+    tools:context=".Screens.MainMenu">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F4FA25"
-    tools:context=".Screens.MainMenu"
+    tools:context=".MainMenu"
     tools:layout_editor_absoluteX="-9dp"
     tools:layout_editor_absoluteY="-99dp">
 
     <TextView
-        android:id="@+id/result"
-        android:layout_width="299dp"
-        android:layout_height="230dp"
+        android:id="@+id/HelpText"
+        android:layout_width="351dp"
+        android:layout_height="541dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:fontFamily="casual"
-        android:text="Вашият резултат е: "
+        android:text="Това приложение е направено от Ахмед Гаваз от Технически университет в София с образователна цел и за освобождаване от изпит по Мобилно програмиране. Държавите са взети от интернет и може да имат някои разлики с официалния списък на държавите. Основно тук трябва да познавате страната. Имате опции за познаване по знамена, столици или форма на картата. Вие също трябва да изберете нивото на трудност. След това трябва да изберете област на държавите. Когато изберете всичко, ще ви бъдат зададени 8 въпроса и трябва да познаете държавата от 4 отговора. Ако изберете грешен отговор, бутонът става червен. Ако изберете правилен отговор, бутонът става зелен и ви се задава друг въпрос.В зависимост от избраното ниво и тип на игра се дават различен брой точки. Също от важност е и от кой опит сте познали държавата Забавлявайте се!"
         android:textAlignment="center"
         android:textColor="#D85B5B"
-        android:textSize="30sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Congratulations" />
+        app:layout_constraintTop_toBottomOf="@+id/Help" />
 
     <TextView
-        android:id="@+id/Congratulations"
+        android:id="@+id/Help"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
         android:layout_marginTop="26dp"
         android:layout_marginEnd="32dp"
         android:fontFamily="@font/berkshire_swash"
-        android:text="Поздравления!"
+        android:text="Помощ и инфо"
         android:textAlignment="center"
         android:textColor="#D85B5B"
         android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.079" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/back"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="100dp"
         android:fontFamily="casual"
         android:text="Главно меню"
@@ -61,6 +63,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/result" />
+        app:layout_constraintTop_toBottomOf="@+id/HelpText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
