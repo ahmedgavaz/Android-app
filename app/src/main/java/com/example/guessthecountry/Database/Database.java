@@ -15,12 +15,9 @@ import java.util.List;
 
 public class Database extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
-    // Database Name
     private static final String DATABASE_NAME = "USERMANAGER";
-    // Table Names
     private static final String USERS = "USERS";
     private static final String WINNERS = "WINNERS";
-    // Common column names
     private static final String KEY_ID = "id";
     private static final String COUNTRIES = "COUNTRIES";
     private static final String KEY_CONTINENT = "continent";
