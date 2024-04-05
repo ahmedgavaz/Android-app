@@ -118,5 +118,14 @@ public class EditProfile  extends AppCompatActivity {
         alertDialog = alertDialogBuilder.create();
         alertDialog.show();
     }
-
+    @Override
+    protected void onPause() {
+        super.onPause();
+        MyApplication.mediaPlayer.pause();
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MyApplication.mediaPlayer.start();
+    }
 }
