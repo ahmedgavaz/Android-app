@@ -134,7 +134,7 @@ public class Region extends AppCompatActivity implements LocationListener {
         try {
             List<Address> listAddresses = geocoder.getFromLocation(latitude, longitude, 1);
             if (null != listAddresses && listAddresses.size() > 0) {
-                String countryCode = listAddresses.get(0).getCountryCode();
+                String countryCode = listAddresses.get(0).getCountryCode().toLowerCase();
                 Intent intent = new Intent(Region.this, TestScreen.class);
                 intent.putExtra("Mode", mode);
                 intent.putExtra("User", username);
