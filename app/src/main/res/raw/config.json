@@ -1,0 +1,1562 @@
+[
+  {
+    "name": "Австрия",
+    "flag": "at",
+    "map": "atm",
+    "capital": "Виена",
+    "continent": "Europe",
+    "level": "Easy"
+  },
+  {
+    "name": "Белгия",
+    "flag": "be",
+    "map": "bem",
+    "capital": "Брюксел",
+    "continent": "Europe",
+    "level": "Easy"
+  },
+  {
+    "name": "Дания",
+    "flag": "dk",
+    "map": "dkm",
+    "capital": "Копенхаген",
+    "continent": "Europe",
+    "level": "Easy"
+  },
+  {
+    "name": "Франция",
+    "flag": "fr",
+    "map": "frm",
+    "capital": "Париж",
+    "continent": "Europe",
+    "level": "Easy"
+  },
+  {
+    "name": "Германия",
+    "flag": "de",
+    "map": "dem",
+    "capital": "Берлин",
+    "continent": "Europe",
+    "level": "Easy"
+  },
+  {
+    "name": "Гърция",
+    "flag": "gr",
+    "map": "grm",
+    "capital": "Атина",
+    "continent": "Europe",
+    "level": "Easy"
+  },
+  {
+    "name": "Унгария",
+    "flag": "hu",
+    "map": "hum",
+    "capital": "Будапеща",
+    "continent": "Europe",
+    "level": "Easy"
+  },
+  {
+    "name": "Италия",
+    "flag": "it",
+    "map": "itm",
+    "capital": "Рим",
+    "continent": "Europe",
+    "level": "Easy"
+  },
+  {
+    "name": "Нидерландия",
+    "flag": "nl",
+    "map": "nlm",
+    "capital": "Амстердам",
+    "continent": "Europe",
+    "level": "Easy"
+  },
+  {
+    "name": "Полша",
+    "flag": "pl",
+    "map": "plm",
+    "capital": "Варшава",
+    "continent": "Europe",
+    "level": "Easy"
+  },
+  {
+    "name": "Португалия",
+    "flag": "pt",
+    "map": "ptm",
+    "capital": "Лисабон",
+    "continent": "Europe",
+    "level": "Easy"
+  },
+  {
+    "name": "Русия",
+    "flag": "ru",
+    "map": "rum",
+    "capital": "Москва",
+    "continent": "Europe",
+    "level": "Easy"
+  },
+  {
+    "name": "Сърбия",
+    "flag": "rs",
+    "map": "rsm",
+    "capital": "Белград",
+    "continent": "Europe",
+    "level": "Easy"
+  },
+  {
+    "name": "Испания",
+    "flag": "es",
+    "map": "esm",
+    "capital": "Мадрид",
+    "continent": "Europe",
+    "level": "Easy"
+  },
+  {
+    "name": "Обединеното кралство",
+    "flag": "gb_nir",
+    "map": "gb_nirm",
+    "capital": "Лондон",
+    "continent": "Europe",
+    "level": "Easy"
+  },
+  {
+    "name": "Армения",
+    "flag": "am",
+    "map": "amm",
+    "capital": "Ереван",
+    "continent": "Asia",
+    "level": "Easy"
+  },
+  {
+    "name": "Азербайджан",
+    "flag": "az",
+    "map": "azm",
+    "capital": "Баку",
+    "continent": "Asia",
+    "level": "Easy"
+  },
+  {
+    "name": "Китай",
+    "flag": "cn",
+    "map": "cnm",
+    "capital": "Пекин",
+    "continent": "Asia",
+    "level": "Easy"
+  },
+  {
+    "name": "Кипър",
+    "flag": "cy",
+    "map": "cym",
+    "capital": "Никозия",
+    "continent": "Asia",
+    "level": "Easy"
+  },
+  {
+    "name": "Грузия",
+    "flag": "ge",
+    "map": "gem",
+    "capital": "Тбилиси",
+    "continent": "Asia",
+    "level": "Easy"
+  },
+  {
+    "name": "Индия",
+    "flag": "in",
+    "map": "inm",
+    "capital": "Ню Делхи",
+    "continent": "Asia",
+    "level": "Easy"
+  },
+  {
+    "name": "Индонезия",
+    "flag": "id",
+    "map": "idm",
+    "capital": "Джакарта",
+    "continent": "Asia",
+    "level": "Easy"
+  },
+  {
+    "name": "Иран",
+    "flag": "ir",
+    "map": "irm",
+    "capital": "Техеран",
+    "continent": "Asia",
+    "level": "Easy"
+  },
+  {
+    "name": "Ирак",
+    "flag": "iq",
+    "map": "iqm",
+    "capital": "Багдад",
+    "continent": "Asia",
+    "level": "Easy"
+  },
+  {
+    "name": "Израел",
+    "flag": "il",
+    "map": "ilm",
+    "capital": "Йерусалим",
+    "continent": "Asia",
+    "level": "Easy"
+  },
+  {
+    "name": "Япония",
+    "flag": "jp",
+    "map": "jpm",
+    "capital": "Токио",
+    "continent": "Asia",
+    "level": "Easy"
+  },
+  {
+    "name": "Филипини",
+    "flag": "ph",
+    "map": "phm",
+    "capital": "Манила",
+    "continent": "Asia",
+    "level": "Easy"
+  },
+  {
+    "name": "Южна Корея",
+    "flag": "kr",
+    "map": "krm",
+    "capital": "Сеул",
+    "continent": "Asia",
+    "level": "Easy"
+  },
+  {
+    "name": "Тайланд",
+    "flag": "th",
+    "map": "thm",
+    "capital": "Банкок",
+    "continent": "Asia",
+    "level": "Easy"
+  },
+  {
+    "name": "Обединените арабски емирства",
+    "flag": "ae",
+    "map": "aem",
+    "capital": "Абу Даби",
+    "continent": "Asia",
+    "level": "Easy"
+  },
+  {
+    "name": "Алжир",
+    "flag": "dz",
+    "map": "dzm",
+    "capital": "Алжир",
+    "continent": "Africa",
+    "level": "Easy"
+  },
+  {
+    "name": "Демократична република Конго",
+    "flag": "cd",
+    "map": "cdm",
+    "capital": "Киншаса",
+    "continent": "Africa",
+    "level": "Easy"
+  },
+  {
+    "name": "Египет",
+    "flag": "eg",
+    "map": "egm",
+    "capital": "Кайро",
+    "continent": "Africa",
+    "level": "Easy"
+  },
+  {
+    "name": "Етиопия",
+    "flag": "et",
+    "map": "etm",
+    "capital": "Адис Абеба",
+    "continent": "Africa",
+    "level": "Easy"
+  },
+  {
+    "name": "Гвинея-Бисау",
+    "flag": "gw",
+    "map": "gwm",
+    "capital": "Бисау",
+    "continent": "Africa",
+    "level": "Easy"
+  },
+  {
+    "name": "Кения",
+    "flag": "ke",
+    "map": "kem",
+    "capital": "Найроби",
+    "continent": "Africa",
+    "level": "Easy"
+  },
+  {
+    "name": "Либерия",
+    "flag": "lr",
+    "map": "lrm",
+    "capital": "Монровия",
+    "continent": "Africa",
+    "level": "Easy"
+  },
+  {
+    "name": "Либия",
+    "flag": "ly",
+    "map": "lym",
+    "capital": "Триполи",
+    "continent": "Africa",
+    "level": "Easy"
+  },
+  {
+    "name": "Мароко",
+    "flag": "ma",
+    "map": "mam",
+    "capital": "Рабат",
+    "continent": "Africa",
+    "level": "Easy"
+  },
+  {
+    "name": "Нигерия",
+    "flag": "ng",
+    "map": "ngm",
+    "capital": "Абуджа",
+    "continent": "Africa",
+    "level": "Easy"
+  },
+  {
+    "name": "Сенегал",
+    "flag": "sn",
+    "map": "snm",
+    "capital": "Дакар",
+    "continent": "Africa",
+    "level": "Easy"
+  },
+  {
+    "name": "Сомалия",
+    "flag": "so",
+    "map": "som",
+    "capital": "Могадишу",
+    "continent": "Africa",
+    "level": "Easy"
+  },
+  {
+    "name": "Южна Африка",
+    "flag": "za",
+    "map": "zam",
+    "capital": "Претория",
+    "continent": "Africa",
+    "level": "Easy"
+  },
+  {
+    "name": "Южен Судан",
+    "flag": "ss",
+    "map": "ssm",
+    "capital": "Джуба",
+    "continent": "Africa",
+    "level": "Easy"
+  },
+  {
+    "name": "Танзания",
+    "flag": "tz",
+    "map": "tzm",
+    "capital": "Додома",
+    "continent": "Africa",
+    "level": "Easy"
+  },
+  {
+    "name": "Тунис",
+    "flag": "tn",
+    "map": "tnm",
+    "capital": "Тунис",
+    "continent": "Africa",
+    "level": "Easy"
+  },
+  {
+    "name": "Уганда",
+    "flag": "ug",
+    "map": "ugm",
+    "capital": "Кампала",
+    "continent": "Africa",
+    "level": "Easy"
+  },
+  {
+    "name": "Ел Салвадор",
+    "flag": "sv",
+    "map": "svm",
+    "capital": "Сан Салвадор",
+    "continent": "America",
+    "level": "Easy"
+  },
+  {
+    "name": "Канада",
+    "flag": "ca",
+    "map": "cam",
+    "capital": "Отава",
+    "continent": "America",
+    "level": "Easy"
+  },
+  {
+    "name": "Куба",
+    "flag": "cu",
+    "map": "cum",
+    "capital": "Хавана",
+    "continent": "America",
+    "level": "Easy"
+  },
+  {
+    "name": "Мексико",
+    "flag": "mx",
+    "map": "mxm",
+    "capital": "Мексико Сити",
+    "continent": "America",
+    "level": "Easy"
+  },
+  {
+    "name": "Съединените щати",
+    "flag": "us",
+    "map": "usm",
+    "capital": "Вашингтон, Д.К.",
+    "continent": "America",
+    "level": "Easy"
+  },
+  {
+    "name": "Аржентина",
+    "flag": "ar",
+    "map": "arm",
+    "capital": "Буенос Айрес",
+    "continent": "America",
+    "level": "Easy"
+  },
+  {
+    "name": "Бразилия",
+    "flag": "br",
+    "map": "brm",
+    "capital": "Бразилия",
+    "continent": "America",
+    "level": "Easy"
+  },
+  {
+    "name": "Чили",
+    "flag": "cl",
+    "map": "clm",
+    "capital": "Сантяго",
+    "continent": "America",
+    "level": "Easy"
+  },
+  {
+    "name": "Колумбия",
+    "flag": "co",
+    "map": "com",
+    "capital": "Богота",
+    "continent": "America",
+    "level": "Easy"
+  },
+  {
+    "name": "Еквадор",
+    "flag": "ec",
+    "map": "ecm",
+    "capital": "Кито",
+    "continent": "America",
+    "level": "Easy"
+  },
+  {
+    "name": "Перу",
+    "flag": "pe",
+    "map": "pem",
+    "capital": "Лима",
+    "continent": "America",
+    "level": "Easy"
+  },
+  {
+    "name": "Уругвай",
+    "flag": "uy",
+    "map": "uym",
+    "capital": "Монтевидео",
+    "continent": "America",
+    "level": "Easy"
+  },
+  {
+    "name": "Венецуела",
+    "flag": "ve",
+    "map": "vem",
+    "capital": "Каракас",
+    "continent": "America",
+    "level": "Easy"
+  },
+  {
+    "name": "Австралия",
+    "flag": "au",
+    "map": "aum",
+    "capital": "Канбера",
+    "continent": "America",
+    "level": "Easy"
+  },
+  {
+    "name": "Нова Зеландия",
+    "flag": "nz",
+    "map": "nzm",
+    "capital": "Уелингтън",
+    "continent": "America",
+    "level": "Easy"
+  },
+  {
+    "name": "Ямайка",
+    "flag": "jm",
+    "map": "jmm",
+    "capital": "Кингстън",
+    "continent": "America",
+    "level": "Easy"
+  },
+  {
+    "name": "Беларус",
+    "flag": "by",
+    "map": "bym",
+    "capital": "Минск",
+    "continent": "Europe",
+    "level": "Medium"
+  },
+  {
+    "name": "България",
+    "flag": "bg",
+    "map": "bgm",
+    "capital": "София",
+    "continent": "Europe",
+    "level": "Medium"
+  },
+  {
+    "name": "Хърватия",
+    "flag": "hr",
+    "map": "hrm",
+    "capital": "Загреб",
+    "continent": "Europe",
+    "level": "Medium"
+  },
+  {
+    "name": "Чехия",
+    "flag": "cz",
+    "map": "czm",
+    "capital": "Прага",
+    "continent": "Europe",
+    "level": "Medium"
+  },
+  {
+    "name": "Финландия",
+    "flag": "fi",
+    "map": "fim",
+    "capital": "Хелзинки",
+    "continent": "Europe",
+    "level": "Medium"
+  },
+  {
+    "name": "Исландия",
+    "flag": "is",
+    "map": "ism",
+    "capital": "Рейкявик",
+    "continent": "Europe",
+    "level": "Medium"
+  },
+  {
+    "name": "Ирландия",
+    "flag": "ie",
+    "map": "iem",
+    "capital": "Дъблин",
+    "continent": "Europe",
+    "level": "Medium"
+  },
+  {
+    "name": "Северна Македония",
+    "flag": "mk",
+    "map": "mkm",
+    "capital": "Скопие",
+    "continent": "Europe",
+    "level": "Medium"
+  },
+  {
+    "name": "Норвегия",
+    "flag": "no",
+    "map": "nom",
+    "capital": "Осло",
+    "continent": "Europe",
+    "level": "Medium"
+  },
+  {
+    "name": "Румъния",
+    "flag": "ro",
+    "map": "rom",
+    "capital": "Букурещ",
+    "continent": "Europe",
+    "level": "Medium"
+  },
+  {
+    "name": "Словакия",
+    "flag": "sk",
+    "map": "skm",
+    "capital": "Братислава",
+    "continent": "Europe",
+    "level": "Medium"
+  },
+  {
+    "name": "Словения",
+    "flag": "si",
+    "map": "sim",
+    "capital": "Любляна",
+    "continent": "Europe",
+    "level": "Medium"
+  },
+  {
+    "name": "Швеция",
+    "flag": "se",
+    "map": "sem",
+    "capital": "Стокхолм",
+    "continent": "Europe",
+    "level": "Medium"
+  },
+  {
+    "name": "Швейцария",
+    "flag": "ch",
+    "map": "chm",
+    "capital": "Берн",
+    "continent": "Europe",
+    "level": "Medium"
+  },
+  {
+    "name": "Турция",
+    "flag": "tr",
+    "map": "trm",
+    "capital": "Анкара",
+    "continent": "Europe",
+    "level": "Medium"
+  },
+  {
+    "name": "Украйна",
+    "flag": "ua",
+    "map": "uam",
+    "capital": "Киев",
+    "continent": "Europe",
+    "level": "Medium"
+  },
+  {
+    "name": "Афганистан",
+    "flag": "af",
+    "map": "afm",
+    "capital": "Кабул",
+    "continent": "Asia",
+    "level": "Medium"
+  },
+  {
+    "name": "Бангладеш",
+    "flag": "bd",
+    "map": "bdm",
+    "capital": "Дака",
+    "continent": "Asia",
+    "level": "Medium"
+  },
+  {
+    "name": "Йордания",
+    "flag": "jo",
+    "map": "jom",
+    "capital": "Аман",
+    "continent": "Asia",
+    "level": "Medium"
+  },
+  {
+    "name": "Казахстан",
+    "flag": "kz",
+    "map": "kzm",
+    "capital": "Астана",
+    "continent": "Asia",
+    "level": "Medium"
+  },
+  {
+    "name": "Ливан",
+    "flag": "lb",
+    "map": "lbm",
+    "capital": "Бейрут",
+    "continent": "Asia",
+    "level": "Medium"
+  },
+  {
+    "name": "Малайзия",
+    "flag": "my",
+    "map": "mym",
+    "capital": "Куала Лумпур",
+    "continent": "Asia",
+    "level": "Medium"
+  },
+  {
+    "name": "Монголия",
+    "flag": "mn",
+    "map": "mnm",
+    "capital": "Улан Батор",
+    "continent": "Asia",
+    "level": "Medium"
+  },
+  {
+    "name": "Мианмар",
+    "flag": "mm",
+    "map": "mmm",
+    "capital": "Найпидо",
+    "continent": "Asia",
+    "level": "Medium"
+  },
+  {
+    "name": "Непал",
+    "flag": "np",
+    "map": "npm",
+    "capital": "Катманду",
+    "continent": "Asia",
+    "level": "Medium"
+  },
+  {
+    "name": "Пакистан",
+    "flag": "pk",
+    "map": "pkm",
+    "capital": "Исламабад",
+    "continent": "Asia",
+    "level": "Medium"
+  },
+  {
+    "name": "Саудитска Арабия",
+    "flag": "sa",
+    "map": "sam",
+    "capital": "Рияд",
+    "continent": "Asia",
+    "level": "Medium"
+  },
+  {
+    "name": "Сингапур",
+    "flag": "sg",
+    "map": "sgm",
+    "capital": "Сингапур",
+    "continent": "Asia",
+    "level": "Medium"
+  },
+  {
+    "name": "Сирия",
+    "flag": "sy",
+    "map": "sym",
+    "capital": "Дамаск",
+    "continent": "Asia",
+    "level": "Medium"
+  },
+  {
+    "name": "Таджикистан",
+    "flag": "tj",
+    "map": "tjm",
+    "capital": "Душанбе",
+    "continent": "Asia",
+    "level": "Medium"
+  },
+  {
+    "name": "Узбекистан",
+    "flag": "uz",
+    "map": "uzm",
+    "capital": "Ташкент",
+    "continent": "Asia",
+    "level": "Medium"
+  },
+  {
+    "name": "Виетнам",
+    "flag": "vn",
+    "map": "vnm",
+    "capital": "Ханой",
+    "continent": "Asia",
+    "level": "Medium"
+  },
+  {
+    "name": "Ангола",
+    "flag": "ao",
+    "map": "aom",
+    "capital": "Луанда",
+    "continent": "Africa",
+    "level": "Medium"
+  },
+  {
+    "name": "Буркина Фасо",
+    "flag": "bf",
+    "map": "bfm",
+    "capital": "Уагадугу",
+    "continent": "Africa",
+    "level": "Medium"
+  },
+  {
+    "name": "Кабо Верде",
+    "flag": "cv",
+    "map": "cvm",
+    "capital": "Прайя",
+    "continent": "Africa",
+    "level": "Medium"
+  },
+  {
+    "name": "Камерун",
+    "flag": "cm",
+    "map": "cmm",
+    "capital": "Яунде",
+    "continent": "Africa",
+    "level": "Medium"
+  },
+  {
+    "name": "Централна Африканска Република",
+    "flag": "cf",
+    "map": "cfm",
+    "capital": "Банги",
+    "continent": "Africa",
+    "level": "Medium"
+  },
+  {
+    "name": "Република Конго",
+    "flag": "cg",
+    "map": "cgm",
+    "capital": "Бразавил",
+    "continent": "Africa",
+    "level": "Medium"
+  },
+  {
+    "name": "Чад",
+    "flag": "td",
+    "map": "tdm",
+    "capital": "Нджамена",
+    "continent": "Africa",
+    "level": "Medium"
+  },
+  {
+    "name": "Еритрея",
+    "flag": "er",
+    "map": "erm",
+    "capital": "Асмара",
+    "continent": "Africa",
+    "level": "Medium"
+  },
+  {
+    "name": "Габон",
+    "flag": "ga",
+    "map": "gam",
+    "capital": "Либревил",
+    "continent": "Africa",
+    "level": "Medium"
+  },
+  {
+    "name": "Гамбия",
+    "flag": "gm",
+    "map": "gmm",
+    "capital": "Банджул",
+    "continent": "Africa",
+    "level": "Medium"
+  },
+  {
+    "name": "Гана",
+    "flag": "gh",
+    "map": "ghm",
+    "capital": "Акра",
+    "continent": "Africa",
+    "level": "Medium"
+  },
+  {
+    "name": "Гвинея",
+    "flag": "gn",
+    "map": "gnm",
+    "capital": "Конакри",
+    "continent": "Africa",
+    "level": "Medium"
+  },
+  {
+    "name": "Кот д'Ивоар",
+    "flag": "ci",
+    "map": "cim",
+    "capital": "Ямусукро",
+    "continent": "Africa",
+    "level": "Medium"
+  },
+  {
+    "name": "Екваториална Гвинея",
+    "flag": "gq",
+    "map": "gqm",
+    "capital": "Малабо",
+    "continent": "Africa",
+    "level": "Medium"
+  },
+  {
+    "name": "Сиера Леоне",
+    "flag": "sl",
+    "map": "slm",
+    "capital": "Фрийтаун",
+    "continent": "Africa",
+    "level": "Medium"
+  },
+  {
+    "name": "Судан",
+    "flag": "sd",
+    "map": "sdm",
+    "capital": "Хартум",
+    "continent": "Africa",
+    "level": "Medium"
+  },
+  {
+    "name": "Мавритания",
+    "flag": "mr",
+    "map": "mrm",
+    "capital": "Нуакшот",
+    "continent": "Africa",
+    "level": "Medium"
+  },
+  {
+    "name": "Мозамбик",
+    "flag": "mz",
+    "map": "mzm",
+    "capital": "Мапуту",
+    "continent": "Africa",
+    "level": "Medium"
+  },
+  {
+    "name": "Доминиканска република",
+    "flag": "dom",
+    "map": "domm",
+    "capital": "Санто Доминго",
+    "continent": "America",
+    "level": "Medium"
+  },
+  {
+    "name": "Бахамски острови",
+    "flag": "bs",
+    "map": "bsm",
+    "capital": "Насау",
+    "continent": "America",
+    "level": "Medium"
+  },
+  {
+    "name": "Барбадос",
+    "flag": "bb",
+    "map": "bbm",
+    "capital": "Бриджтаун",
+    "continent": "America",
+    "level": "Medium"
+  },
+  {
+    "name": "Папуа Нова Гвинея",
+    "flag": "pg",
+    "map": "pgm",
+    "capital": "Порт Морсби",
+    "continent": "America",
+    "level": "Medium"
+  },
+  {
+    "name": "Самоа",
+    "flag": "ws",
+    "map": "wsm",
+    "capital": "Апия",
+    "continent": "America",
+    "level": "Medium"
+  },
+  {
+    "name": "Соломонови острови",
+    "flag": "sb",
+    "map": "sbm",
+    "capital": "Хониара",
+    "continent": "America",
+    "level": "Medium"
+  },
+  {
+    "name": "Панама",
+    "flag": "pa",
+    "map": "pam",
+    "capital": "Панама Сити",
+    "continent": "America",
+    "level": "Medium"
+  },
+  {
+    "name": "Гватемала",
+    "flag": "gt",
+    "map": "gtm",
+    "capital": "Гватемала Сити",
+    "continent": "America",
+    "level": "Medium"
+  },
+  {
+    "name": "Хаити",
+    "flag": "ht",
+    "map": "htm",
+    "capital": "Порт-о-Пренс",
+    "continent": "America",
+    "level": "Medium"
+  },
+  {
+    "name": "Хондурас",
+    "flag": "hn",
+    "map": "hnm",
+    "capital": "Тегусигалпа",
+    "continent": "America",
+    "level": "Medium"
+  },
+  {
+    "name": "Тринидад и Тобаго",
+    "flag": "tt",
+    "map": "ttm",
+    "capital": "Порт оф Спейн",
+    "continent": "America",
+    "level": "Medium"
+  },
+  {
+    "name": "Боливия",
+    "flag": "bo",
+    "map": "bom",
+    "capital": "Сукре",
+    "continent": "America",
+    "level": "Medium"
+  },
+  {
+    "name": "Гаяна",
+    "flag": "gy",
+    "map": "gym",
+    "capital": "Джорджтаун",
+    "continent": "America",
+    "level": "Medium"
+  },
+  {
+    "name": "Парагвай",
+    "flag": "py",
+    "map": "pym",
+    "capital": "Асунсион",
+    "continent": "America",
+    "level": "Medium"
+  },
+  {
+    "name": "Суринам",
+    "flag": "sr",
+    "map": "srm",
+    "capital": "Парамарибо",
+    "continent": "America",
+    "level": "Medium"
+  },
+  {
+    "name": "Фиджи",
+    "flag": "fj",
+    "map": "fjm",
+    "capital": "Сува",
+    "continent": "America",
+    "level": "Medium"
+  },
+  {
+    "name": "Албания",
+    "flag": "al",
+    "map": "alm",
+    "capital": "Тирана",
+    "continent": "Europe",
+    "level": "Hard"
+  },
+  {
+    "name": "Андора",
+    "flag": "ad",
+    "map": "adm",
+    "capital": "Андора ла Веля",
+    "continent": "Europe",
+    "level": "Hard"
+  },
+  {
+    "name": "Босна и Херцеговина",
+    "flag": "ba",
+    "map": "bam",
+    "capital": "Сараево",
+    "continent": "Europe",
+    "level": "Hard"
+  },
+  {
+    "name": "Естония",
+    "flag": "ee",
+    "map": "eem",
+    "capital": "Талин",
+    "continent": "Europe",
+    "level": "Hard"
+  },
+  {
+    "name": "Косово",
+    "flag": "xk",
+    "map": "xkm",
+    "capital": "Прищина",
+    "continent": "Europe",
+    "level": "Hard"
+  },
+  {
+    "name": "Латвия",
+    "flag": "lv",
+    "map": "lvm",
+    "capital": "Рига",
+    "continent": "Europe",
+    "level": "Hard"
+  },
+  {
+    "name": "Лихтенщайн",
+    "flag": "li",
+    "map": "lim",
+    "capital": "Вадуц",
+    "continent": "Europe",
+    "level": "Hard"
+  },
+  {
+    "name": "Литва",
+    "flag": "lt",
+    "map": "ltm",
+    "capital": "Вилнюс",
+    "continent": "Europe",
+    "level": "Hard"
+  },
+  {
+    "name": "Люксембург",
+    "flag": "lu",
+    "map": "lum",
+    "capital": "Люксембург",
+    "continent": "Europe",
+    "level": "Hard"
+  },
+  {
+    "name": "Малта",
+    "flag": "mt",
+    "map": "mtm",
+    "capital": "Валета",
+    "continent": "Europe",
+    "level": "Hard"
+  },
+  {
+    "name": "Молдова",
+    "flag": "md",
+    "map": "mdm",
+    "capital": "Кишинев",
+    "continent": "Europe",
+    "level": "Hard"
+  },
+  {
+    "name": "Монако",
+    "flag": "mc",
+    "map": "mcm",
+    "capital": "Монако",
+    "continent": "Europe",
+    "level": "Hard"
+  },
+  {
+    "name": "Черна гора",
+    "flag": "me",
+    "map": "mem",
+    "capital": "Подгорица",
+    "continent": "Europe",
+    "level": "Hard"
+  },
+  {
+    "name": "Сан Марино",
+    "flag": "sm",
+    "map": "smm",
+    "capital": "Сан Марино",
+    "continent": "Europe",
+    "level": "Hard"
+  },
+  {
+    "name": "Ватиканска държава",
+    "flag": "va",
+    "map": "vam",
+    "capital": "Ватикана",
+    "continent": "Europe",
+    "level": "Hard"
+  },
+  {
+    "name": "Бахрейн",
+    "flag": "bh",
+    "map": "bhm",
+    "capital": "Манама",
+    "continent": "Asia",
+    "level": "Hard"
+  },
+  {
+    "name": "Бутан",
+    "flag": "bt",
+    "map": "btm",
+    "capital": "Тхимпху",
+    "continent": "Asia",
+    "level": "Hard"
+  },
+  {
+    "name": "Бруней",
+    "flag": "bn",
+    "map": "bnm",
+    "capital": "Бандар Сери Бегаван",
+    "continent": "Asia",
+    "level": "Hard"
+  },
+  {
+    "name": "Камбоджа",
+    "flag": "kh",
+    "map": "khm",
+    "capital": "Пном Пен",
+    "continent": "Asia",
+    "level": "Hard"
+  },
+  {
+    "name": "Кувейт",
+    "flag": "kw",
+    "map": "kwm",
+    "capital": "Кувейт Сити",
+    "continent": "Asia",
+    "level": "Hard"
+  },
+  {
+    "name": "Киргизстан",
+    "flag": "kg",
+    "map": "kgm",
+    "capital": "Бишкек",
+    "continent": "Asia",
+    "level": "Hard"
+  },
+  {
+    "name": "Лаос",
+    "flag": "la",
+    "map": "lam",
+    "capital": "Виентян",
+    "continent": "Asia",
+    "level": "Hard"
+  },
+  {
+    "name": "Малдиви",
+    "flag": "mv",
+    "map": "mvm",
+    "capital": "Мале",
+    "continent": "Asia",
+    "level": "Hard"
+  },
+  {
+    "name": "Северна Корея",
+    "flag": "kp",
+    "map": "kpm",
+    "capital": "Пхеньонг",
+    "continent": "Asia",
+    "level": "Hard"
+  },
+  {
+    "name": "Оман",
+    "flag": "om",
+    "map": "omm",
+    "capital": "Мускат",
+    "continent": "Asia",
+    "level": "Hard"
+  },
+  {
+    "name": "Палестина",
+    "flag": "ps",
+    "map": "psm",
+    "capital": "Рамала",
+    "continent": "Asia",
+    "level": "Hard"
+  },
+  {
+    "name": "Катар",
+    "flag": "qa",
+    "map": "qam",
+    "capital": "Доха",
+    "continent": "Asia",
+    "level": "Hard"
+  },
+  {
+    "name": "Шри Ланка",
+    "flag": "lk",
+    "map": "lkm",
+    "capital": "Шри Джаяварденепура Коте",
+    "continent": "Asia",
+    "level": "Hard"
+  },
+  {
+    "name": "Туркменистан",
+    "flag": "tm",
+    "map": "tmm",
+    "capital": "Ашхабад",
+    "continent": "Asia",
+    "level": "Hard"
+  },
+  {
+    "name": "Източен Тимор",
+    "flag": "tl",
+    "map": "tlm",
+    "capital": "Дили",
+    "continent": "Asia",
+    "level": "Hard"
+  },
+  {
+    "name": "Йемен",
+    "flag": "ye",
+    "map": "yem",
+    "capital": "Сана",
+    "continent": "Asia",
+    "level": "Hard"
+  },
+  {
+    "name": "Бенин",
+    "flag": "bj",
+    "map": "bjm",
+    "capital": "Порто-Ново",
+    "continent": "Africa",
+    "level": "Hard"
+  },
+  {
+    "name": "Ботсвана",
+    "flag": "bw",
+    "map": "bwm",
+    "capital": "Габороне",
+    "continent": "Africa",
+    "level": "Hard"
+  },
+  {
+    "name": "Бурунди",
+    "flag": "bi",
+    "map": "bim",
+    "capital": "Гитега",
+    "continent": "Africa",
+    "level": "Hard"
+  },
+  {
+    "name": "Коморски острови",
+    "flag": "km",
+    "map": "kmm",
+    "capital": "Морони",
+    "continent": "Africa",
+    "level": "Hard"
+  },
+  {
+    "name": "Джибути",
+    "flag": "dj",
+    "map": "djm",
+    "capital": "Джибути",
+    "continent": "Africa",
+    "level": "Hard"
+  },
+  {
+    "name": "Есватини",
+    "flag": "esw",
+    "map": "eswm",
+    "capital": "Мбабане",
+    "continent": "Africa",
+    "level": "Hard"
+  },
+  {
+    "name": "Лесото",
+    "flag": "ls",
+    "map": "lsm",
+    "capital": "Масеру",
+    "continent": "Africa",
+    "level": "Hard"
+  },
+  {
+    "name": "Мадагаскар",
+    "flag": "mg",
+    "map": "mgm",
+    "capital": "Антананариво",
+    "continent": "Africa",
+    "level": "Hard"
+  },
+  {
+    "name": "Малави",
+    "flag": "mw",
+    "map": "mwm",
+    "capital": "Лилонгве",
+    "continent": "Africa",
+    "level": "Hard"
+  },
+  {
+    "name": "Мали",
+    "flag": "ml",
+    "map": "mlm",
+    "capital": "Бамако",
+    "continent": "Africa",
+    "level": "Hard"
+  },
+  {
+    "name": "Мавриций",
+    "flag": "mu",
+    "map": "mum",
+    "capital": "Порт Луи",
+    "continent": "Africa",
+    "level": "Hard"
+  },
+  {
+    "name": "Намибия",
+    "flag": "na",
+    "map": "nam",
+    "capital": "Виндхук",
+    "continent": "Africa",
+    "level": "Hard"
+  },
+  {
+    "name": "Нигер",
+    "flag": "ne",
+    "map": "nem",
+    "capital": "Ниамей",
+    "continent": "Africa",
+    "level": "Hard"
+  },
+  {
+    "name": "Руанда",
+    "flag": "rw",
+    "map": "rwm",
+    "capital": "Кигали",
+    "continent": "Africa",
+    "level": "Hard"
+  },
+  {
+    "name": "Сао Томе и Принсипи",
+    "flag": "st",
+    "map": "stm",
+    "capital": "Сао Томе",
+    "continent": "Africa",
+    "level": "Hard"
+  },
+  {
+    "name": "Сейшели",
+    "flag": "sc",
+    "map": "scm",
+    "capital": "Виктория",
+    "continent": "Africa",
+    "level": "Hard"
+  },
+  {
+    "name": "Того",
+    "flag": "tg",
+    "map": "tgm",
+    "capital": "Ломе",
+    "continent": "Africa",
+    "level": "Hard"
+  },
+  {
+    "name": "Замбия",
+    "flag": "zm",
+    "map": "zm",
+    "capital": "Лусака",
+    "continent": "Africa",
+    "level": "Hard"
+  },
+  {
+    "name": "Зимбабве",
+    "flag": "zw",
+    "map": "zwm",
+    "capital": "Хараре",
+    "continent": "Africa",
+    "level": "Hard"
+  },
+  {
+    "name": "Антигуа и Барбуда",
+    "flag": "ag",
+    "map": "agm",
+    "capital": "Сейнт Джонс",
+    "continent": "America",
+    "level": "Hard"
+  },
+  {
+    "name": "Белиз",
+    "flag": "bz",
+    "map": "bzm",
+    "capital": "Белмопан",
+    "continent": "America",
+    "level": "Hard"
+  },
+  {
+    "name": "Коста Рика",
+    "flag": "cr",
+    "map": "crm",
+    "capital": "Сан Хосе",
+    "continent": "America",
+    "level": "Hard"
+  },
+  {
+    "name": "Доминика",
+    "flag": "dm",
+    "map": "dmm",
+    "capital": "Розо",
+    "continent": "America",
+    "level": "Hard"
+  },
+  {
+    "name": "Гренада",
+    "flag": "gd",
+    "map": "gdm",
+    "capital": "Сейнт Джорджс",
+    "continent": "America",
+    "level": "Hard"
+  },
+  {
+    "name": "Никарагуа",
+    "flag": "ni",
+    "map": "nim",
+    "capital": "Манагуа",
+    "continent": "America",
+    "level": "Hard"
+  },
+  {
+    "name": "Сейнт Китс и Невис",
+    "flag": "kn",
+    "map": "knm",
+    "capital": "Басетер",
+    "continent": "America",
+    "level": "Hard"
+  },
+  {
+    "name": "Сейнт Лусия",
+    "flag": "lc",
+    "map": "lcm",
+    "capital": "Кастри",
+    "continent": "America",
+    "level": "Hard"
+  },
+  {
+    "name": "Сейнт Винсент и Гренадини",
+    "flag": "vc",
+    "map": "vcm",
+    "capital": "Кингстаун",
+    "continent": "America",
+    "level": "Hard"
+  },
+  {
+    "name": "Кирибати",
+    "flag": "ki",
+    "map": "kim",
+    "capital": "Южен Тарава",
+    "continent": "America",
+    "level": "Hard"
+  },
+  {
+    "name": "Маршалови острови",
+    "flag": "mh",
+    "map": "mhm",
+    "capital": "Маджуро",
+    "continent": "America",
+    "level": "Hard"
+  },
+  {
+    "name": "Микронезия",
+    "flag": "fm",
+    "map": "fmm",
+    "capital": "Паликир",
+    "continent": "America",
+    "level": "Hard"
+  },
+  {
+    "name": "Науру",
+    "flag": "nr",
+    "map": "nrm",
+    "capital": "Ярен",
+    "continent": "America",
+    "level": "Hard"
+  },
+  {
+    "name": "Палау",
+    "flag": "pw",
+    "map": "pwm",
+    "capital": "Нгерулмуд",
+    "continent": "America",
+    "level": "Hard"
+  },
+  {
+    "name": "Тонга",
+    "flag": "to",
+    "map": "tom",
+    "capital": "Нукуалофа",
+    "continent": "America",
+    "level": "Hard"
+  },
+  {
+    "name": "Вануату",
+    "flag": "vu",
+    "map": "vum",
+    "capital": "Порт Вила",
+    "continent": "America",
+    "level": "Hard"
+  }
+]
