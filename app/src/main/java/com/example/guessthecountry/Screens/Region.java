@@ -165,4 +165,14 @@ public class Region extends AppCompatActivity implements LocationListener {
             }
         }
     }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        MyApplication.mediaPlayer.pause();
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MyApplication.mediaPlayer.start();
+    }
 }
