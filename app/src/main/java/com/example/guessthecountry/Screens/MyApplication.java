@@ -7,7 +7,7 @@ import com.example.guessthecountry.R;
 
 public class MyApplication extends Application {
     private static MyApplication instance;
-    private MediaPlayer mediaPlayer;
+    public static MediaPlayer mediaPlayer;
 
     @Override
     public void onCreate() {
@@ -16,6 +16,14 @@ public class MyApplication extends Application {
         mediaPlayer = MediaPlayer.create(this, R.raw.melody);
         mediaPlayer.setLooping(true);
         mediaPlayer.start();
+    }
+
+    @Override
+    public void onTerminate() {
+        super.onTerminate();
+        if (mediaPlayer != null) {
+            mediaPlayer.stop();
+        }
     }
 
     public static MyApplication getInstance() {
