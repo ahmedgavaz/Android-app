@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -67,7 +68,16 @@ public class Login extends AppCompatActivity {
             }
         });
     }
-
+    @Override
+    protected void onPause() {
+        super.onPause();
+        MyApplication.mediaPlayer.pause();
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MyApplication.mediaPlayer.start();
+    }
     public void open(String ss, final boolean log, String username) {
         alertDialogBuilder.setMessage(ss);
         alertDialogBuilder.setPositiveButton("Ок", new
