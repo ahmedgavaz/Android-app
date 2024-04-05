@@ -38,7 +38,11 @@ public class Register extends AppCompatActivity {
                 String pass = password.getText().toString().trim();
 
                 if (!username.isEmpty() && !pass.isEmpty()) {
-                    if (!db.isUserExists(username)) {
+                    if (username.length() < 3) {
+                        openDialog("Потребителското име трябва да бъде поне 3 знака!", false);
+                    } else if (pass.length() < 6) {
+                        openDialog("Паролата трябва да бъде поне 6 знака!", false);
+                    } else if (!db.isUserExists(username)) {
                         User newUser = new User(username, pass);
                         db.addUser(newUser);
                         openDialog("Успешна регистрация!", true);
@@ -50,6 +54,7 @@ public class Register extends AppCompatActivity {
                 }
             }
         });
+
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
