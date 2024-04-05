@@ -53,4 +53,14 @@ public class EndGame extends AppCompatActivity {
             }
         });
     }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        MyApplication.mediaPlayer.pause();
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MyApplication.mediaPlayer.start();
+    }
 }
