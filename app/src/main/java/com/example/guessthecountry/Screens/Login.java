@@ -3,6 +3,7 @@ package com.example.guessthecountry.Screens;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,10 +12,13 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.guessthecountry.DTO.Country;
 import com.example.guessthecountry.DTO.User;
+import com.example.guessthecountry.DTO.Winner;
 import com.example.guessthecountry.Database.Database;
 import com.example.guessthecountry.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Login extends AppCompatActivity {
@@ -26,6 +30,7 @@ public class Login extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
+        //db.onUpgrade(db.getReadableDatabase(),1,2);
         final TextView userName = (TextView) findViewById(R.id.usernameEditText);
         final TextView password = (TextView) findViewById(R.id.passwordEditText);
         final Button login = (Button) findViewById(R.id.loginButton);
