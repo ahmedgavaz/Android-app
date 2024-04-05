@@ -51,6 +51,7 @@ public class Database extends SQLiteOpenHelper {
         this.context=context;
     }
 
+    @Override
     public void onCreate(SQLiteDatabase db) {
         String CREATE_USERS_TABLE = "CREATE TABLE " + USERS +
                 "("
@@ -70,22 +71,9 @@ public class Database extends SQLiteOpenHelper {
                 + KEY_CONTINENT + " TEXT," + KEY_LEVEL + " TEXT" + ")";
         db.execSQL(CREATE_COUNTRIES_TABLE);
 
-        // Добавяне на допълнителна проверка, преди да се извика addCountries
-        if (!isTableExists(COUNTRIES, db)) {
-            addCountries(context);
-        }
+        // След като създадем таблиците, можем да добавим държавите
+        addCountries(context);
     }
-
-    // Метод за проверка дали таблицата вече съществува
-    private boolean isTableExists(String tableName, SQLiteDatabase db) {
-        Cursor cursor = db.rawQuery("SELECT * FROM sqlite_master WHERE type='table' AND name=?", new String[] {tableName});
-        boolean exists = (cursor != null) && (cursor.getCount() > 0);
-        if (cursor != null) {
-            cursor.close();
-        }
-        return exists;
-    }
-
     public void updateUser(String oldUsername, String newUsername, String newPassword) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
