@@ -18,7 +18,7 @@ import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;А
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -46,13 +46,11 @@ public class Database extends SQLiteOpenHelper {
     private static final String KEY_PASSWORD = "password";
     private static final String KEY_POINTS = "points";
     private  Context context;
-
     public Database(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
         this.context=context;
     }
 
-    @Override
     public void onCreate(SQLiteDatabase db) {
         String CREATE_USERS_TABLE = "CREATE TABLE " + USERS +
                 "("
@@ -72,37 +70,40 @@ public class Database extends SQLiteOpenHelper {
                 + KEY_CONTINENT + " TEXT," + KEY_LEVEL + " TEXT" + ")";
         db.execSQL(CREATE_COUNTRIES_TABLE);
 
-        // След като създадем таблиците, можем да добавим държавите
-        addCountries(context);
+        // Добавяне на допълнителна проверка, преди да се извика addCountries
+        if (!isTableExists(COUNTRIES, db)) {
+            addCountries(context);
+        }
     }
+
+    // Метод за проверка дали таблицата вече съществува
+    private boolean isTableExists(String tableName, SQLiteDatabase db) {
+        Cursor cursor = db.rawQuery("SELECT * FROM sqlite_master WHERE type='table' AND name=?", new String[] {tableName});
+        boolean exists = (cursor != null) && (cursor.getCount() > 0);
+        if (cursor != null) {
+            cursor.close();
+        }
+        return exists;
+    }
+
     public void updateUser(String oldUsername, String newUsername, String newPassword) {
         SQLiteDatabase db = this.getWritableDatabase();
-
         ContentValues values = new ContentValues();
-        values.put(KEY_NAME, newUsername); // Променете KEY_NAME на името на колоната за потребителско име
-
-        // Първо обновяваме името на потребителя
+        values.put(KEY_NAME, newUsername);
         db.update(USERS, values, KEY_NAME + " = ?", new String[]{oldUsername});
-
-        // След това обновяваме паролата
         values.clear();
         values.put(KEY_PASSWORD, newPassword);
         db.update(USERS, values, KEY_NAME + " = ?", new String[]{newUsername});
-
         db.close();
     }
 
     public void deleteUserByUsername(String username) {
         SQLiteDatabase db = this.getWritableDatabase();
-
-        // Изтриване на ред от таблицата USERS, където потребителското име (KEY_NAME) съвпада с подаденото username
         db.delete(USERS, KEY_NAME + " = ?", new String[]{username});
-
         db.close();
     }
     public void addCountries(Context context) {
         SQLiteDatabase db = this.getWritableDatabase();
-
         try {
             InputStream inputStream = context.getResources().openRawResource(R.raw.config);
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
@@ -213,28 +214,6 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + COUNTRIES);
         onCreate(db);
     }
-    public List<Country> getAllCountries() {
-        List<Country> countryList = new ArrayList<>();
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * FROM " + COUNTRIES, null);
-        if (cursor.moveToFirst()) {
-            do {
-                Country country = new Country();
-                country.setName(cursor.getString(cursor.getColumnIndexOrThrow(KEY_NAME)));
-                country.setFlag(cursor.getString(cursor.getColumnIndexOrThrow(KEY_FLAG)));
-                country.setMap(cursor.getString(cursor.getColumnIndexOrThrow(KEY_MAP)));
-                country.setCapital(cursor.getString(cursor.getColumnIndexOrThrow(KEY_CAPITAL)));
-                country.setContinent(cursor.getString(cursor.getColumnIndexOrThrow(KEY_CONTINENT)));
-                country.setLevel(cursor.getString(cursor.getColumnIndexOrThrow(KEY_LEVEL)));
-                countryList.add(country);
-            } while (cursor.moveToNext());
-        }
-        cursor.close();
-        db.close();
-        return countryList;
-    }
-
-
     public void onDeleteTable() {
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL("DROP TABLE IF EXISTS " + USERS);
