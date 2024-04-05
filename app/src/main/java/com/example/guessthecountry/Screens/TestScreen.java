@@ -31,12 +31,14 @@ public class TestScreen extends AppCompatActivity {
     private static int points = 0;
     private static List<String> askedCountries = new ArrayList<>();
     private static List<Button> wrongChoices = new ArrayList<>();
+    private static List<String> answeredCountries = new ArrayList<>();
 
     private void setQuestionAndOptionsCapitals(List<Country> countries, String mode, int pointsForMode) {
         do {
             Random random = new Random();
             int index = random.nextInt(countries.size());
             correctAnswer = countries.get(index);
+            answeredCountries.add(correctAnswer.getName());
             if (mode.equals("Capital")) {
                 question.setText(countries.get(index).getCapital() + " е столица на коя държава?");
             } else if (mode.equals("Flag")) {
@@ -67,13 +69,17 @@ public class TestScreen extends AppCompatActivity {
 
         List<String> options = new ArrayList<>();
         for (Country country : countries) {
-            if (!country.equals(correctAnswer)) {
+            if (!country.equals(correctAnswer) && !answeredCountries.contains(country.getName())) {
                 options.add(country.getName());
             }
         }
         Collections.shuffle(options);
         for (int i = 1; i < 4; i++) {
-            buttons.get(i).setText(options.get(i));
+            try{
+                buttons.get(i).setText(options.get(i-1));
+            }catch (Exception e){
+                System.out.println();
+            }
         }
         View.OnClickListener answerClickListener = new View.OnClickListener() {
             @Override
