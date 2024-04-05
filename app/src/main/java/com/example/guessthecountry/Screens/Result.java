@@ -23,12 +23,15 @@ public class Result extends AppCompatActivity {
     private static final String TAG = "Results";
     private Button mainMenu;
     private TextView place, name, points;
+    private String username;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.results);
         Log.d(TAG, "onCreate: Started.");
+        Intent receiveMode = getIntent();
+        username = receiveMode.getStringExtra("User");
         mainMenu = findViewById(R.id.back);
         List<Winner> winners = FileIO.readUsersFromFile(getApplicationContext());
         Collections.sort(winners, Comparator.comparingInt(Winner::getPoints).reversed());
@@ -44,6 +47,7 @@ public class Result extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Result.this, MainMenu.class);
+                intent.putExtra("User", username);
                 startActivity(intent);
                 finish();
             }
