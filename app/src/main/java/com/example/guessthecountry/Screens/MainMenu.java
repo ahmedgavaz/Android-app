@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.guessthecountry.Database.Database;
 import com.example.guessthecountry.R;
 
 public class MainMenu extends AppCompatActivity {
@@ -52,7 +53,6 @@ public class MainMenu extends AppCompatActivity {
                 Intent intent = new Intent(MainMenu.this, Level.class);
                 intent.putExtra("Mode", "Flag");
                 intent.putExtra("User", username);
-                intent.putExtra("Username", username);
                 startActivity(intent);
                 finish();
             }
@@ -89,6 +89,7 @@ public class MainMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainMenu.this, Result.class);
+                intent.putExtra("User", username);
                 startActivity(intent);
                 finish();
             }
