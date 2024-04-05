@@ -12,7 +12,7 @@ import com.example.guessthecountry.Database.Database;
 import com.example.guessthecountry.R;
 
 public class MainMenu extends AppCompatActivity {
-    private Button flag, capital, help, map, results, exit,edit;
+    private Button flag, capital, help, map, results, exit, edit;
     private String username;
     private static final String TAG = "MainActivity";
 
@@ -94,5 +94,17 @@ public class MainMenu extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        MyApplication.mediaPlayer.pause();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MyApplication.mediaPlayer.start();
     }
 }
