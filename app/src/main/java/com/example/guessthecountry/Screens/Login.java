@@ -30,7 +30,6 @@ public class Login extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-        //db.onUpgrade(db.getReadableDatabase(),1,2);
         final TextView userName = (TextView) findViewById(R.id.usernameEditText);
         final TextView password = (TextView) findViewById(R.id.passwordEditText);
         final Button login = (Button) findViewById(R.id.loginButton);
