@@ -37,4 +37,14 @@ public class HelpScreen extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        MyApplication.mediaPlayer.pause();
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MyApplication.mediaPlayer.start();
+    }
 }
