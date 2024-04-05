@@ -36,9 +36,6 @@ public class EndGame extends AppCompatActivity {
         username = receiveMode.getStringExtra("User");
         String points = receiveMode.getStringExtra("Points");
         congrats = findViewById(R.id.result);
-        congrats.setText("Вашият резултат е: " + points);
-        List<Winner> winners = FileIO.readUsersFromFile(getApplicationContext());
-        Collections.sort(winners, Comparator.comparingInt(Winner::getPoints).reversed());
         congrats.setText("Вашият резултат е: " + points + "\n");
         mainMenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,7 +44,8 @@ public class EndGame extends AppCompatActivity {
                 db.addWinner(winner);
                 List<Winner> winners = db.getAllWinners();
                 Collections.sort(winners, Comparator.comparingInt(Winner::getPoints).reversed());
-                FileIO.writeUsersToFile(getApplicationContext(), winners);
+                List<Winner> topWinners = winners.size() > 10 ? winners.subList(0, 10) : winners;
+                FileIO.writeUsersToFile(getApplicationContext(), topWinners);
                 Intent intent = new Intent(EndGame.this, MainMenu.class);
                 intent.putExtra("User", username);
                 startActivity(intent);
