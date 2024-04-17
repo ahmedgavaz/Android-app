@@ -54,7 +54,7 @@ public class TestScreen extends AppCompatActivity {
                 int resourceId = getResources().getIdentifier(drawableName, "drawable", getPackageName());
                 img.setImageResource(resourceId);
             }
-        } while (askedCountries.contains(correctAnswer.getName()));
+        } while (!askedCountries.contains(correctAnswer.getName()));
         final int[] receivedPoints = {pointsForMode};
         askedCountries.add(correctAnswer.getName());
         List<Button> buttons = new ArrayList<>();
