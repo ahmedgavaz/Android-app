@@ -13,6 +13,7 @@ import com.example.guessthecountry.R;
 
 public class HelpScreen extends AppCompatActivity {
     private static final String TAG = "HelpScreen";
+    private String username;
     private Button mainMenu;
 
     @Override
@@ -20,11 +21,14 @@ public class HelpScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.help);
         Log.d(TAG, "onCreate: Started.");
+        Intent receiveMode = getIntent();
+        username = receiveMode.getStringExtra("User");
         mainMenu = findViewById(R.id.back);
         mainMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HelpScreen.this, MainMenu.class);
+                intent.putExtra("User", username);
                 startActivity(intent);
                 finish();
             }
