@@ -36,8 +36,11 @@ public class TestScreen extends AppCompatActivity {
     private void setQuestionAndOptionsCapitals(List<Country> countries, String mode, int pointsForMode) {
         do {
             Random random = new Random();
-            int index = random.nextInt(countries.size());
+            int index = random.nextInt(countries.size()-1);
             correctAnswer = countries.get(index);
+            if (askedCountries.contains(correctAnswer.getName())){
+                continue;
+            }
             answeredCountries.add(correctAnswer.getName());
             if (mode.equals("Capital")) {
                 question.setText(countries.get(index).getCapital() + " е столица на коя държава?");
@@ -66,7 +69,6 @@ public class TestScreen extends AppCompatActivity {
 
         Button correctButton = buttons.get(0);
         correctButton.setText(correctAnswer.getName());
-
         List<String> options = new ArrayList<>();
         for (Country country : countries) {
             if (!country.equals(correctAnswer) && !answeredCountries.contains(country.getName())) {
